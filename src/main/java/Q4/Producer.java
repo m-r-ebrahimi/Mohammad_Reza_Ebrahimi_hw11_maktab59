@@ -3,7 +3,7 @@ package Q4;
 import java.util.List;
 
 public class Producer implements Runnable {
-    private List<Book> list;
+    private final List<Book> list;
 
     public Producer(List<Book> list) {
         this.list = list;
@@ -18,6 +18,7 @@ public class Producer implements Runnable {
                 list.add(book);
                 list.notify();
             }
+
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {

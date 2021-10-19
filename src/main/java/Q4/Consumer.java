@@ -3,7 +3,7 @@ package Q4;
 import java.util.List;
 
 public class Consumer implements Runnable {
-    private List<Book> list;
+    private final List<Book> list;
 
     public Consumer(List<Book> list) {
         this.list = list;
