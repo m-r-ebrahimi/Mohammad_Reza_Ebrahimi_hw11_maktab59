@@ -18,7 +18,6 @@ public class Producer implements Runnable {
                 list.add(book);
                 list.notify();
             }
-
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
