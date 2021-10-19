@@ -3,7 +3,7 @@ package Q4;
 import java.util.List;
 
 public class Producer implements Runnable {
-    private final List<Book> list;
+    private List<Book> list;
 
     public Producer(List<Book> list) {
         this.list = list;
